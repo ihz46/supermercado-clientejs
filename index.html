@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JS Client</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+
+<body>
+    <main class="container">
+        <h1>Cliente en Vanilla Javascript</h1>
+        <p>Endpoint <b id="endpoint"></b></p>
+
+        <div class="row">
+
+            <div class="col">
+                <h2>Listado Productos</h2>
+                <ul id="listaProductos" class="list-group">
+                    <li class="list-group-item">Cargando productos...</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <p>Escribe un id del producto deseado</p>
+                <div class="form-group row">
+                    <input type="text" id="idProducto" placeholder="id" class="form-control col-4 offset-1">
+                    <button id="boton" class="btn btn-primary offset-1 col-4">Consultar</button>
+                </div>
+
+                <p>Resultado:</p>
+                <textarea id="resultado" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img id="imagen" src="https://picsum.photos/300/300" class="card-img-top" alt="imagen producto">
+                    <div class="card-body">
+                        <h5 class="card-title" id="nombre"></h5>
+                        <p id="descripcion" class="card-text"></p>
+                        <p id="precio" class="card-text"></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </main>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>
