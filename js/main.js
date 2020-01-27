@@ -31,7 +31,7 @@ function cargarProductos() {
             console.debug("producto en json %o", productos);
             listaEL.innerHTML = "";  // limpiar lista
             for (let p of productos) {
-                listaEL.innerHTML += `<li class="list-group-item">${p.nombre}</li>`;
+                listaEL.innerHTML += `<li class="list-group-item"><b>${p.id}</b> - ${p.nombre}</li>`;
             }
 
         }
@@ -42,6 +42,7 @@ function cargarProductos() {
 
 
 }
+
 
 //registrar evento click para el boton:
 botonEL.addEventListener("click", () => {
